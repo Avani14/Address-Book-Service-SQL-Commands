@@ -15,7 +15,7 @@ select * from address_book;
 
 insert into address_book values("Avani","Trivedi","Colony Address","Indore","MP",452012,9876543212,"trivediavani14@gmail.com");
 insert into address_book values("Jane","Austen","Colony Address","Pune","MH",8881375,9176513212,"jane@gmail.com");
-insert into address_book values("Charlotte","Bronte","Colony Address","Delhi","Delhi",445375,8176511212,"charlotte@gmail.com");
+insert into address_book values("Charlotte","Bronte","Colony Address","Delhi","Delhi",445375,8176511212,"charlotte@gmail.com","Family");
 
 update address_book set city ="Ujjain" where first_name = "Avani";
 
@@ -32,3 +32,5 @@ select count(name) from address_book;
 alter table address_book add column name varchar(15);
 
 update address_book set name = "Profession" where first_name = "Charlotte";
+
+insert into address_book values("Charlotte","Bronte","Colony Address","Delhi","Delhi",445375,8176511212,"charlotte@gmail.com","Family");
