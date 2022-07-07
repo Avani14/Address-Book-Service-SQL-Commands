@@ -16,3 +16,5 @@ select * from address_book;
 insert into address_book values("Avani","Trivedi","Colony Address","Indore","MP",452012,9876543212,"trivediavani14@gmail.com");
 
 update address_book set city ="Ujjain" where first_name = "Avani";
+
+delete from address_book  where first_name = "Avani";
