@@ -26,3 +26,7 @@ select * from address_book where city = "Indore" or state = "MH";
 select count(state&city) from address_book;
 
 select * from address_book order by first_name;
+
+alter table address_book add column name varchar(15);
+
+update address_book set name = "Profession" where first_name = "Charlotte";
